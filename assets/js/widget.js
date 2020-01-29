@@ -12,7 +12,7 @@ $("#submitButton").on("click", function() {
     userInput = $("#userInput").val()
     topics.push(userInput)
     createButtons()
-    $("#userInput").empty() // not working
+    $("#userInput").val("")
 })
 
 function createButtons() {
