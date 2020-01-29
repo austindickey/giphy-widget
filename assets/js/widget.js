@@ -12,10 +12,14 @@ $("#submitButton").on("click", function() {
     userInput = $("#userInput").val()
     topics.push(userInput)
     createButtons()
+    $("#userInput").empty() // not working
 })
 
 function createButtons() {
-    for (var y = 7; y < topics.length; y++) {
+
+    $("#animalButtons").empty()
+
+    for (var y = 0; y < topics.length; y++) {
         newButton = $("#animalButtons").append("<button class='buttonGroup' data-name='" + topics[y] + "'>" + topics[y] + "</button>")
     }
     callAPI()

@@ -1,0 +1,28 @@
+/* =================================
+            Main Content
+================================= */
+
+body {
+    background-image: url(../images/bg.png);
+    overflow-x: hidden;
+}
+
+#animalButtons {
+    margin: 2% 2% 30px 2%;
+}
+
+#animalDisplay {
+    padding-left: 2%;
+}
+
+.buttonGroup,
+#submitButton {
+    margin: 0 8px 8px 0;
+    background-color: orange;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+
+.gifs {
+    margin: 0 0 10px 10px;
+}
