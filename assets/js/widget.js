@@ -40,7 +40,17 @@ function callAPI() {
         }).then(function(response) {
 
             for (var z = 0; z < 10; z++) {
-                newGif = $("#animalDisplay").append("<img src='" + response.data[z].images.fixed_height_still.url + "' class='gifs' data-index='" + z + "'><span class='rating'>" + response.data[z].rating + "<span>")
+                var containerDiv = $("<div>")
+                containerDiv.addClass("individualGifs")
+                var newImg = $("<img>")
+                newImg.attr("src", response.data[z].images.fixed_height_still.url)
+                newImg.addClass("gifs")
+                newImg.attr("data-index", z)
+                var rating = $("<p>")
+                rating.text("Rating: " + response.data[z].rating)
+                containerDiv.append(newImg)
+                containerDiv.append(rating)
+                $("#animalDisplay").append(containerDiv)
             }
             
             $(".gifs").on("click", function() {
