@@ -5,22 +5,48 @@
 body {
     background-image: url(../images/bg.png);
     overflow-x: hidden;
+    font-family: 'Abel', sans-serif;
 }
 
-#animalButtons {
-    margin: 2% 2% 30px 2%;
+#logo {
+    width: 20%;
+    margin: 0 40%;
 }
 
-#animalDisplay {
-    padding-left: 2%;
+h1 {
+    color: #dc3644;
+    text-align: center;
+    margin-bottom:15px;
 }
 
-.buttonGroup,
-#submitButton {
-    margin: 0 8px 8px 0;
-    background-color: orange;
-    border: 2px solid #000;
-    border-radius: 5px;
+#searchField {
+    margin-top: 50px;
+    background-color: #5ea9f5;
+    width: 100%;
+    height: 300px;
+    padding: 10%;
+    padding-top: 15px;
+    border-radius: 15px;
+}
+
+#userInput {
+    width: 86%;
+}
+
+.input-group {
+    height: 40px;
+}
+
+#instructions {
+    margin-top: 28px;
+    text-align: center;
+    color: #dc3644;
+    font-style: italic;
+    font-size: 20px;
+}
+
+#gifDisplay {
+    padding: 50px 15%;
 }
 
 .gifs {
@@ -30,4 +56,8 @@ body {
 .individualGifs {
     display: inline-block;
     text-align: center;
+}
+
+.rating {
+    font-size: 20px;
 }
