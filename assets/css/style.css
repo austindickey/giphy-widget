@@ -99,3 +99,20 @@ a:hover {
     text-decoration: none;
     color: #dc3644;
 }
+
+/* =================================
+        Mobile Responsiveness
+================================= */
+
+@media (max-width:1024px) {
+    #userInput {width: 82%;}
+}
+
+@media (max-width:414px) {
+    #userInput {width: 78%;}
+    #searchField {width: 96%; margin-left: 2%;}
+}
+
+@media (max-width:375px) {
+    #userInput {width: 76%;}
+}
