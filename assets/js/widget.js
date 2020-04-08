@@ -6,6 +6,7 @@ function callAPI() {
     $("#gifDisplay").empty()
 
     var searchTerm = $("#userInput").val()
+
     var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=" + apiKey + "&q=" + searchTerm + "&limit=10&offset=0&rating=R&lang=en"
 
     $("#userInput").val("")
@@ -48,4 +49,11 @@ function callAPI() {
 
 $("#submitButton").on("click", function () {
     callAPI()
+})
+
+$(document).ready(function(){
+    $("#userInput").keypress(function(e){
+      if(e.keyCode==13)
+      $("#submitButton").click()
+    })
 })
