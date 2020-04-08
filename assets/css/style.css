@@ -105,14 +105,14 @@ a:hover {
 ================================= */
 
 @media (max-width:1024px) {
-    #userInput {width: 82%;}
+    #userInput {width: 81%;}
 }
 
 @media (max-width:414px) {
-    #userInput {width: 78%;}
+    #userInput {width: 77%;}
     #searchField {width: 96%; margin-left: 2%;}
 }
 
 @media (max-width:375px) {
-    #userInput {width: 76%;}
+    #userInput {width: 74%;}
 }
