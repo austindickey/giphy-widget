@@ -104,8 +104,12 @@ a:hover {
         Mobile Responsiveness
 ================================= */
 
-@media (max-width:1024px) {
+@media (max-width:1440px) {
     #userInput {width: 81%;}
+}
+
+@media (max-width:1024px) {
+    #userInput {width: 80%;}
 }
 
 @media (max-width:414px) {
